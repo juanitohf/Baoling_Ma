@@ -1,0 +1,39 @@
+{
+	"HOME": "Home",
+	"PROJECTS": "Recent Projects",
+	"SERVICES": "Services",
+	"TEACHING": "Teaching",
+	"RESOURCES": "Resources",
+	"CONTACT": "Contact",
+	"TITLE_CARROUSEL_HOME_1": "Baoling Ma",
+	"SUBTITLE_CARROUSEL_HOME_1": "Population and Environmental Models, Disease Models, Partial Differential Equations, Scientific Computing, Assistant Professor",
+	"TITLE_CARROUSEL_HOME_2": "Millersville University",
+	"SUBTITLE_CARROUSEL_HOME_2": "Mathematics Education, Assistant Professor",
+	"TITLE_CARROUSEL_HOME_3": "Research",
+	"SUBTITLE_CARROUSEL_HOME_3": "Finite difference approximations for a size-structured population model with distributed states in the recruitment",
+
+	"TITLE_WELCOME": "Welcome",
+	"SUBTITLE_WELCOME": "Baoling would be a good idea to explain a little bit your website. What can it do for the users etc...",
+	
+	
+	"RESOURCE_CAROUSEL_IMAGE_1":"dist/img/blog/blog_1.jpg",
+	"RESOURCE_CAROUSEL_ENTRY_TITLE_1":"All Process Food Lab Studio",
+	"RESOURCE_CAROUSEL_ENTRY_META_1":"John Marshal",
+	"RESOURCE_CAROUSEL_DATE_1":"July 10, 2015",
+	"RESOURCE_CAROUSEL_ENTRY_CONTENT_1":"This is English content, This is English content, This is English content, This is English content, This is English content",
+	
+	"RESOURCE_CAROUSEL_IMAGE_2":"dist/img/blog/blog_2.jpg",
+	"RESOURCE_CAROUSEL_ENTRY_TITLE_2":"Amazing magazines",
+	"RESOURCE_CAROUSEL_ENTRY_META_2":"John Marshal",
+	"RESOURCE_CAROUSEL_DATE_2":"July 10, 2015",
+	"RESOURCE_CAROUSEL_ENTRY_CONTENT_2":"This is English content, This is English content, This is English content, This is English content, This is English content",
+	
+	"RESOURCE_CAROUSEL_IMAGE_3":"dist/img/blog/blog_3.jpg",
+	"RESOURCE_CAROUSEL_ENTRY_TITLE_3":"All Process Food Lab Studio",
+	"RESOURCE_CAROUSEL_ENTRY_META_3":"John Marshal",
+	"RESOURCE_CAROUSEL_DATE_3":"July 10, 2015",
+	"RESOURCE_CAROUSEL_ENTRY_CONTENT_3":"This is English content, This is English content, This is English content, This is English content, This is English content"
+	
+
+
+}

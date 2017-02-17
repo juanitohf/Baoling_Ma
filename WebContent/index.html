@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Baoling Portfolio</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    
+    
+    
+    <link rel="icon" href="dist/img/Icon/logo.ico" type="image/gif" sizes="16x16">
+    <!-- Pages style -->
+    <link href="dist/css/main.css" rel="stylesheet" type="text/css" />
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<meta name="description" content="">
+		
+
+		
+		<!-- Css -->
+		<link rel="stylesheet" href="webjars/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="dist/css/template/stroke-gap-icons.css" />
+		<link rel="stylesheet" href="dist/css/template/elegant-icons.css" />
+		<link rel="stylesheet" href="dist/css/template/rev-slider.css" />
+		<link rel="stylesheet" href="dist/css/template/owl.carousel.css">
+		<link rel="stylesheet" href="dist/css/template/flexslider.css">
+		<link rel="stylesheet" href="dist/css/template/style.css" />
+		<link rel="stylesheet" href="dist/css/template/responsive.css" />
+		
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="dist/img/Icon/logo.ico">
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.html">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.html">
+		
+		
+		<!-- Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+		
+    
+  </head>
+  
+
+  
+  <body data-ng-controller="mainController">
+ 	 
+       	<!-- Preloader -->
+		<div class="loader-mask">
+			<div class="loader">
+				"Loading..."
+			</div>
+		</div>
+
+		<!-- Navigation -->
+		<header class="nav-type-1" id="home">
+
+			<nav class="navbar navbar-fixed-top">
+				<div class="navigation-overlay">
+					<div class="container-fluid relative">
+						<div class="row">
+
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+
+								<!-- Logo -->
+								<div class="logo-container">
+									<div class="logo-wrap">
+										<a href="#home">
+											<img class="logo" src="dist/img/Logo Baoling white.png" alt="logo">
+										</a>
+									</div>
+								</div>
+							</div> <!-- end navbar-header -->
+
+
+							<div class="col-md-8 col-xs-12 nav-wrap">
+								<div class="collapse navbar-collapse text-center" id="navbar-collapse">
+									
+									<ul class="nav navbar-nav text-center headerMenu">
+
+
+										<li class="active" data-ng-click="gotoPage('home')">
+											<a href="#home" translate="HOME">Home</a>
+										</li>
+										
+										<li data-ng-click="gotoPage('projects')">
+											<a translate="PROJECTS">Recent Projects</a>
+										</li>
+										
+										<li data-ng-click="gotoPage('services')">
+											<a translate="SERVICES">Public Services</a>
+										</li>
+										<li data-ng-click="gotoPage('teaching')">
+											<a translate="TEACHING">Teaching</a>
+										</li>							            
+										<li data-ng-click="gotoPage('resources')">
+											<a translate="RESOURCES">Resources</a>
+										</li>
+										<li data-ng-click="gotoPage('contact')">
+											<a translate="CONTACT">Contact</a>
+										</li>
+										
+									</ul>
+								</div>
+							</div> <!-- end col -->
+
+							<div class="menu-socials hidden-sm hidden-xs">
+								<ul>
+									<li>
+										<a href=""><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+									</li>
+									<li>
+										<a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+									</li>
+									
+									
+									
+									
+									
+									<li class="languageLiMenu">
+										 <select data-ng-model="selectedLanguage" >
+	                                         <option value="en">US</option>
+	                                         <option value="es">ES</option>
+	                                         <option value="cn">CN</option>
+	                                     </select>
+	                                     <img data-ng-src="dist/img/flags/{{countryFlag}}.png" alt="flag"/>
+									</li>
+								</ul>
+							</div>
+							
+						</div> <!-- end row -->
+					</div> <!-- end container -->
+				</div> <!-- end navigation -->
+			</nav> <!-- end navbar -->
+
+		</header> <!-- end navigation -->
+
+
+		<div class="main-wrapper-onepage main oh">
+
+			<!-- Background Video -->
+			<section id="ytb-wrap" style="background-image: url(dist/img/background/background-univeristy.JPG)">
+				 <angular-html-video back-video-data="options" data-ng-if="isMobile != true"></angular-html-video>  
+				 <div data-ng-if="isMobile == true" id="MobileHomeScreen">
+				 		<h1> Baoling Ma</h1>
+				 		<p>Assistand Professor</p>
+				 </div>
+			</section>
+
+
+			<!-- Intro -->
+			<section class="section-wrap intro" id="intro">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-sm-8 col-sm-offset-2 text-center slideInUp">
+							<h2 class="intro-heading heading-frame" translate="TITLE_WELCOME">Welcome</h2>
+							<p class="intro-text mb-60" translate="SUBTITLE_WELCOME">
+								Baoling would be a good idea to explain a little bit your website. What can it do for the users etc...
+							</p>
+						<br><br>
+							<img src="dist/img/Logo Baoling w img.png" alt="" />
+						</div>
+
+					</div>
+				</div>
+			</section> <!-- end intro -->
+			
+
+
+
+
+
+
+
+
+			<!-- Research -->
+			<section class="section-wrap blueBack pb-mdm-50 pb-130" id="projects">
+				<div class="container">
+
+					<div class="row heading">
+						<div class="col-md-6 col-md-offset-3">
+							<h2 class="text-center bottom-line">Recent Projects</h2>
+							<p class="subheading text-center">Continuously Creating Daring Digital Solutions</p>
+						</div>
+					</div>
+
+					<div class="row">
+					
+					
+						<div class="col-md-4 service-item">
+							<div class="service-item-box icon-effect-1 icon-effect-1a text-center">
+								<a href="#">
+									<i class="icon icon-Star hi-icon"></i>
+								</a>
+								<h3>Great Design</h3>
+								<p>Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>			
+							</div>						
+						</div> <!-- end service item -->
+
+						<div class="col-md-4 service-item">
+							<div class="service-item-box icon-effect-1 icon-effect-1a text-center">
+								<a href="#">
+									<i class="icon icon-Layers hi-icon"></i>
+								</a>
+								<h3>Perfect Coding</h3>
+								<p>Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>			
+							</div>						
+						</div> <!-- end service item -->
+
+						<div class="col-md-4 service-item">
+							<div class="service-item-box icon-effect-1 icon-effect-1a text-center">
+								<a href="#">
+									<i class="icon icon-Chart hi-icon"></i>
+								</a>
+								<h3>Marketing</h3>
+								<p>Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>			
+							</div>						
+						</div> <!-- end service item -->
+
+						<div class="col-md-4 service-item">
+							<div class="service-item-box icon-effect-1 icon-effect-1a text-center">
+								<a href="#">
+									<i class="icon icon-User hi-icon"></i>
+								</a>
+								<h3>Support</h3>
+								<p>Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>			
+							</div>						
+						</div> <!-- end service item -->
+
+						<div class="col-md-4 service-item">
+							<div class="service-item-box icon-effect-1 icon-effect-1a text-center">
+								<a href="#">
+									<i class="icon icon-Settings hi-icon"></i>
+								</a>
+								<h3>Development</h3>
+								<p>Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>			
+							</div>						
+						</div> <!-- end service item -->
+
+						<div class="col-md-4 service-item">
+							<div class="service-item-box icon-effect-1 icon-effect-1a text-center">
+								<a href="#">
+									<i class="icon icon-DesktopMonitor hi-icon"></i>
+								</a>
+								<h3>Web Design</h3>
+								<p>Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>			
+							</div>						
+						</div> <!-- end Research item -->
+						
+					</div>
+				</div>
+			</section> <!-- end research -->
+
+
+		<!-- Background Separation -->
+			<section class="section-wrap parallax-testimonials relative" style="background-image: url(dist/img/background/background-univeristy2.JPG)">
+
+				<div id="owl-backSeparation" class="owl-carousel owl-theme text-center">
+
+					<div class="item">
+						<div class="container testimonial">
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1">
+									<i class="fa fa-quote-left"></i>
+									<p class="testimonial-text">I’am amazed, I should say thank you so much for your awesome template. Design is so good and neat, every detail has been taken care these team are realy amazing and talented! I will work only with enigma agency.</p>
+									<h6>John C. Marshall</h6>
+									<span>Art Director</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="container testimonial">
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1">
+									<i class="fa fa-quote-left"></i>
+									<p class="testimonial-text">I’am amazed, I should say thank you so much for your awesome template. Design is so good and neat, every detail has been taken care these team are realy amazing and talented! I will work only with enigma agency.</p>
+									<h6>John C. Marshall</h6>
+									<span>Art Director</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="container testimonial">
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1">
+									<i class="fa fa-quote-left"></i>
+									<p class="testimonial-text">I’am amazed, I should say thank you so much for your awesome template. Design is so good and neat, every detail has been taken care these team are realy amazing and talented! I will work only with enigma agency.</p>
+									<h6>John C. Marshall</h6>
+									<span>Art Director</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section> <!-- end Background Separation -->
+
+
+
+
+
+
+
+
+
+
+			<!-- Services -->
+			<section class="section-wrap works-grid-3-col-wide pb-0" id="services">
+
+				<div class="container-fluid">
+
+					<div class="row heading">
+						<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+							<h2 class="text-center bottom-line">Services</h2>
+							<p class="subheading text-center">I am Baoling Ma and I am the best</p>
+						</div>
+					</div>
+
+					<div class="grid-3-col grid-wide grid-gutter">
+
+						<div class="work-item web-design print">
+							<div class="work-img">
+								<img src="dist/img/projects/project_1.jpg" alt="">
+								<div class="work-overlay">				
+									<div class="work-description">
+										<h3>
+											<a href="portfolio-single.html">Poster Mockup</a>
+										</h3>
+										<span>
+											<a href="#">Print</a>
+										</span>
+									</div>
+									<a href="img/project_1_big.jpg" class="lightbox-gallery btn btn-lg btn-transparent" title="Poster Mockup">View Work</a>
+								</div>
+							</div>
+						</div> <!-- end work-item -->
+
+						<div class="work-item web-design branding">
+							<div class="work-img">
+								<img src="dist/img/projects/project_2.jpg" alt="">
+								<div class="work-overlay">				
+									<div class="work-description">
+										<h3>
+											<a href="portfolio-single.html">Vimeo Lightbox</a>
+										</h3>
+										<span>
+											<a href="#">Branding</a>
+										</span>
+									</div>
+									<a href="http://vimeo.com/19270640" class="lightbox-gallery mfp-iframe btn btn-lg btn-transparent">View Work</a>
+								</div>
+							</div>
+						</div> <!-- end work-item -->
+
+						<div class="work-item web-design branding">
+							<div class="work-img">
+								<img src="dist/img/projects/project_3.jpg" alt="">
+								<div class="work-overlay">				
+									<div class="work-description">
+										<h3>
+											<a href="portfolio-single.html">Youtube Lightbox</a>
+										</h3>
+										<span>
+											<a href="#">Branding</a>
+										</span>
+									</div>
+									<a href="https://www.youtube.com/watch?v=Scxs7L0vhZ4?autoplay=1" class="lightbox-gallery mfp-iframe btn btn-lg btn-transparent">View Work</a>
+								</div>
+							</div>
+						</div> <!-- end work-item -->
+
+						<div class="work-item web-design print">
+							<div class="work-img">
+								<img src="dist/img/projects/project_4.jpg" alt="">
+								<div class="work-overlay">				
+									<div class="work-description">
+										<h3>
+											<a href="portfolio-single.html">Brod Identity</a>
+										</h3>
+										<span>
+											<a href="#">Branding</a>
+										</span>
+									</div>
+									<a href="img/project_4_big.jpg" class="lightbox-gallery btn btn-lg btn-transparent" title="Brod Identity">View Work</a>
+								</div>
+							</div>
+						</div> <!-- end work-item -->
+
+						<div class="work-item web-design branding">
+							<div class="work-img">
+								<img src="dist/img/projects/project_5.jpg" alt="">
+								<div class="work-overlay">				
+									<div class="work-description">
+										<h3>
+											<a href="portfolio-single.html">Cup Mockup</a>
+										</h3>
+										<span>
+											<a href="#">Branding</a>
+										</span>
+									</div>
+									<a href="img/project_5_big.jpg" class="lightbox-gallery btn btn-lg btn-transparent" title="Cup Mockup">View Work</a>
+								</div>
+							</div>
+						</div> <!-- end work-item -->
+
+						<div class="work-item web-design branding">
+							<div class="work-img">
+								<img src="dist/img/projects/project_6.jpg" alt="">
+								<div class="work-overlay">				
+									<div class="work-description">
+										<h3>
+											<a href="portfolio-single.html">Stationery Mockup</a>
+										</h3>
+										<span>
+											<a href="#">Branding</a>
+										</span>
+									</div>
+									<a href="img/project_6_big.jpg" class="lightbox-gallery btn btn-lg btn-transparent" title="Stationery Mockup">View Work</a>
+								</div>
+							</div>
+						</div> <!-- end work-item -->
+
+					</div>		
+				</div>
+			</section> <!-- end Services-->
+
+
+
+
+
+
+
+
+
+			
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- Black Separation -->
+			<section class="section-wrap promo-section bg-dark" id="separation">
+
+				
+				<img class="logo" src="dist/img/Logo Baoling white.png" alt="logo">
+				
+			</section> <!-- end promo section -->
+			
+
+			
+
+
+			<!-- Call to Action -->
+			<section class="call-to-action">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-9 col-xs-12">		
+							<h2>Have You Fallen In Love Already With Our Works?</h2>
+						</div>
+						
+						<div class="col-md-3 col-xs-12 cta-button">
+							<a href="#" class="btn btn-lg btn-color">View Portfolio</a>
+						</div>
+
+					</div>
+				</div>
+			</section> <!-- end call to action -->
+
+
+			<!-- Process -->
+			<section class="section-wrap process" style="background-image: url(dist/img/background/background-univeristy3.JPG)">
+
+				<div class="container">
+
+					<div class="row heading">
+						<div class="col-md-6 col-md-offset-3">
+							<h2 class="text-center color-white bottom-line">Our Process</h2>
+							<p class="subheading text-center color-white">That's How We Do It</p>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<div class="col-sm-5ths">
+							<div class="process-item">
+								<div class="process-wrap text-center">
+									<i class="icon icon-ClipboardText"></i>
+									<h3>1. Planning</h3>
+								</div>
+							</div>
+						</div> <!-- end step -->
+
+						<div class="col-sm-5ths">
+							<div class="process-item">
+								<div class="process-wrap text-center">
+									<i class="icon icon-Bulb"></i>
+									<h3>2. Idea</h3>
+								</div>
+							</div>
+						</div> <!-- end step -->
+
+						<div class="col-sm-5ths">
+							<div class="process-item">
+								<div class="process-wrap text-center">
+									<i class="icon icon-Edit"></i>
+									<h3>3. Design</h3>
+								</div>
+							</div>
+						</div> <!-- end step -->
+
+						<div class="col-sm-5ths">
+							<div class="process-item">
+								<div class="process-wrap text-center">
+									<i class="icon icon-Settings"></i>
+									<h3>4. Development</h3>
+								</div>
+							</div>
+						</div> <!-- end step -->
+
+						<div class="col-sm-5ths">
+							<div class="process-item last">
+								<div class="process-wrap text-center">
+									<i class="icon icon-Web"></i>
+									<h3>5. Result</h3>
+								</div>
+							</div>
+						</div> <!-- end step -->
+
+					</div>
+				</div>
+			</section> <!-- process -->
+
+			
+			
+
+			<!-- Teaching -->
+			<section class="section-wrap works-grid-3-col-wide pb-130" id="teaching">
+
+				<div class="container-fluid">
+
+					<div class="row heading">
+						<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+							<h2 class="text-center bottom-line">Teaching</h2>
+							<p class="subheading text-center">I am the best Math Teacher ever</p>
+						</div>
+					</div>
+
+					<div class="grid-3-col grid-wide grid-gutter">
+
+						<div class="work-item web-design print">
+							<div class="work-img">
+								<img src="dist/img/projects/project_1.jpg" alt="">
+								<div class="work-overlay">				
+									<div class="work-description">
+										<h3>
+											<a href="portfolio-single.html">Poster Mockup</a>
+										</h3>
+										<span>
+											<a href="#">Print</a>
+										</span>
+									</div>
+									<a href="img/project_1_big.jpg" class="lightbox-gallery btn btn-lg btn-transparent" title="Poster Mockup">View Work</a>
+								</div>
+							</div>
+						</div> <!-- end work-item -->
+
+						<div class="work-item web-design branding">
+							<div class="work-img">
+								<img src="dist/img/projects/project_2.jpg" alt="">
+								<div class="work-overlay">				
+									<div class="work-description">
+										<h3>
+											<a href="portfolio-single.html">Vimeo Lightbox</a>
+										</h3>
+										<span>
+											<a href="#">Branding</a>
+										</span>
+									</div>
+									<a href="http://vimeo.com/19270640" class="lightbox-gallery mfp-iframe btn btn-lg btn-transparent">View Work</a>
+								</div>
+							</div>
+						</div> <!-- end work-item -->
+
+						<div class="work-item web-design branding">
+							<div class="work-img">
+								<img src="dist/img/projects/project_3.jpg" alt="">
+								<div class="work-overlay">				
+									<div class="work-description">
+										<h3>
+											<a href="portfolio-single.html">Youtube Lightbox</a>
+										</h3>
+										<span>
+											<a href="#">Branding</a>
+										</span>
+									</div>
+									<a href="https://www.youtube.com/watch?v=Scxs7L0vhZ4?autoplay=1" class="lightbox-gallery mfp-iframe btn btn-lg btn-transparent">View Work</a>
+								</div>
+							</div>
+						</div> <!-- end work-item -->
+
+						<div class="work-item web-design print">
+							<div class="work-img">
+								<img src="dist/img/projects/project_4.jpg" alt="">
+								<div class="work-overlay">				
+									<div class="work-description">
+										<h3>
+											<a href="portfolio-single.html">Brod Identity</a>
+										</h3>
+										<span>
+											<a href="#">Branding</a>
+										</span>
+									</div>
+									<a href="img/project_4_big.jpg" class="lightbox-gallery btn btn-lg btn-transparent" title="Brod Identity">View Work</a>
+								</div>
+							</div>
+						</div> <!-- end work-item -->
+
+						<div class="work-item web-design branding">
+							<div class="work-img">
+								<img src="dist/img/projects/project_5.jpg" alt="">
+								<div class="work-overlay">				
+									<div class="work-description">
+										<h3>
+											<a href="portfolio-single.html">Cup Mockup</a>
+										</h3>
+										<span>
+											<a href="#">Branding</a>
+										</span>
+									</div>
+									<a href="img/project_5_big.jpg" class="lightbox-gallery btn btn-lg btn-transparent" title="Cup Mockup">View Work</a>
+								</div>
+							</div>
+						</div> <!-- end work-item -->
+
+						<div class="work-item web-design branding">
+							<div class="work-img">
+								<img src="dist/img/projects/project_6.jpg" alt="">
+								<div class="work-overlay">				
+									<div class="work-description">
+										<h3>
+											<a href="portfolio-single.html">Stationery Mockup</a>
+										</h3>
+										<span>
+											<a href="#">Branding</a>
+										</span>
+									</div>
+									<a href="img/project_6_big.jpg" class="lightbox-gallery btn btn-lg btn-transparent" title="Stationery Mockup">View Work</a>
+								</div>
+							</div>
+						</div> <!-- end work-item -->
+
+					</div>		
+				</div>
+			</section> <!-- end Teaching-->
+
+
+			<!-- Resources -->
+			<section class="section-wrap blueBack from-blog" id="resources">
+				<div class="container">	
+
+					<div class="row heading">
+						<div class="col-md-6 col-md-offset-3">
+							<h2 class="text-center bottom-line">Resources</h2>
+							<p class="subheading text-center">Baoling Resources YEAAAAAAAAAAAAAAAAAAAAA</p>
+						</div>
+					</div>
+
+					<div class="container">
+
+						<div class="row">
+
+							<div id="owl-blog" class="owl-carousel owl-theme">
+
+								<div class="blog-col" data-ng-repeat=" c in resourcesCarousel" data-ng-if="resourcesCarousel != null">
+									<div class="entry-img">
+										<a href="blog-single.html">
+											<img data-ng-src="{{c.image}}" alt="">
+										</a>
+									</div>
+									<div class="entry-box">
+										<div class="entry-title">
+											<h4><a href="blog-single.html" translate="RESOURCE_CAROUSEL_ENTRY_TITLE_{{$index + 1}}">{{c.entryTitle}}</a></h4>
+										</div>
+										<ul class="entry-meta">
+											<li>by <a href="blog-single-2.html" translate="RESOURCE_CAROUSEL_ENTRY_META_{{$index + 1}}">{{c.entryMeta}}</a></li>
+											<li>
+												<a href="#" translate="RESOURCE_CAROUSEL_DATE_{{index + 1}}">{{c.date}}</a>
+											</li>										
+										</ul>
+										<div class="entry-content">
+											<p translate="RESOURCE_CAROUSEL_ENTRY_CONTENT_{{$index + 1}}">{{c.entryContent}}</p>
+											<a href="blog-single.html" class="read-more">Read More</a>
+										</div>
+									</div>
+								</div> <!-- end post -->
+								
+							</div>
+
+							<div class="customNavigation mt-40 text-center">
+                                <a class="prev"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+								<a class="next"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+							</div>
+
+						</div> <!-- end row -->
+					</div>
+				</div>
+			</section> <!-- end from blog -->
+
+
+			
+
+
+			
+
+			<!-- Contact -->
+			<section class="section-wrap contact" id="contact">
+				<div class="container">
+
+					<div class="row heading">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<h2 class="text-center bottom-line">Contact</h2>
+							<p class="subheading">Dont hesitate to get touch please fill out this form and we'll get back to you within 48hrs. We hand picked to provide the right balance of skills to work.</p>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<div class="col-md-4">
+							<h5>Office Hours</h5>
+							<p>Mon-Fri: 13:00 – 16:00</p>
+
+							<div class="contact-item">
+								<div class="contact-icon">
+									<i class="icon icon-Pointer"></i>
+								</div>
+								<h6>Address</h6>
+								<p>320 College Manor Avenue, Apt 7<br>
+								Millerville, PA 17551</p>
+							</div> <!-- end address -->
+
+							<div class="contact-item">
+								<div class="contact-icon">
+									<i class="icon icon-Phone"></i>
+								</div>
+								<h6>Call Us</h6>
+								<span>+1 337 255 9181</span>
+							</div> <!-- end phone number -->
+
+							<div class="contact-item">
+								<div class="contact-icon">
+									<i class="icon icon-Mail"></i>
+								</div>
+								<h6>E-mail</h6>
+								<a href="mailto:blingm441361@gmail.com">blingm441361@gmail.com</a>
+							</div> <!-- end email -->
+
+						</div>
+
+						<div class="col-md-8">
+							<form id="contact-form" name="contactForm">
+
+								<div class="row contact-row">
+									<div class="col-md-6 contact-name">
+										<input name="name" id="name" type="text" data-ng-model="userName" placeholder="Name*" required >
+									</div>
+									<div class="col-md-6 contact-email">
+										<input name="mail" id="mail" type="email" data-ng-model="userEmail" placeholder="E-mail*" required>
+									</div>
+								</div>
+
+								<input name="subject" id="subject" type="text" data-ng-model="userSubject" placeholder="Subject" required >	
+								<textarea name="comment" id="comment" placeholder="Message" data-ng-model="userMessage" required></textarea>
+			  					<input type="submit"  class="btn btn-lg btn-color btn-submit" value="Send Message" data-ng-click="submitForm()">
+				  				<div id="msg" class="message"></div>
+				  			</form>
+						</div> <!-- end col -->
+
+					</div>
+				</div>
+			</section> <!-- end contact -->
+
+
+			
+
+			<!-- Google Map -->
+			<div id="map"></div> 
+
+			<!-- Footer -->
+			<footer class="footer minimal bg-dark">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-4 col-md-offset-4">
+							
+							<div class="footer-logo  mb-30 zoomIn">
+								<h2>
+									<a href="#home" class="color-white">Baoling Ma</a>
+								</h2>
+							</div>
+
+
+							<div class="socials footer-socials">
+								<a href="https://www.researchgate.net/profile/Baoling_Ma" target="_blank" ><i class="fa boldFont">Rg</i></a>
+								<a href="https://www.linkedin.com/in/baoling-ma-5733814a" target="_blank"><i class="fa fa-linkedin"></i></a>
+								<!-- <a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+								<a href="#"><i class="fa fa-behance"></i></a> -->
+							</div> <!-- end socials -->
+
+							<span class="copyright text-center">
+								©2017 | Development by <a href="#home">Juan Huertas-Fernandez</a>
+							</span>
+
+						</div>
+
+					</div>
+				</div>
+			</footer> <!-- end footer -->
+
+			<div id="back-to-top">
+				<a href="#top"><i class="fa fa-angle-up"></i></a>
+			</div>
+
+		</div> <!-- end main-wrapper -->
+		
+	
+	
+	
+		<!--  Google Map Function -->
+    	<script type="text/javascript">
+	    	function initMap() {
+	            var uluru = {lat: 40.0032855, lng: -76.36791199999999};
+	            var map = new google.maps.Map(document.getElementById('map'), {
+	              zoom: 14,
+	              scrollwheel: false,
+	              center: uluru
+	            });
+	            var marker = new google.maps.Marker({
+	              position: uluru,
+	              map: map
+	            });
+	          } 
+    	</script>
+        
+         
+        
+         
+    	<script src="dist/js/plugins/require/require.js" data-main="app/main.js"></script>
+  	    
+  	    <!-- Google Map -->
+  		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDELvVrnaFo_tHvb_5hzaJxzNp3aoG4VOg&callback=initMap"> </script> 
+  </body>
+</html>

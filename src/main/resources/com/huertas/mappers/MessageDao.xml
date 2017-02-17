@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2015-2016 the original author or authors. Licensed under the 
+	Apache License, Version 2.0 (the "License"); you may not use this file except 
+	in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+	Unless required by applicable law or agreed to in writing, software distributed 
+	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+	the specific language governing permissions and limitations under the License. -->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.huertas.mappers.MessageDao">
+
+	<!-- Message result map -->
+	<resultMap type="Message" id="MessageResult">
+		<id property="messageId" column="MESSAGE_ID" />
+		<result property="messageSubject" column="MESSAGE_SUBJECT" />
+		<result property="messageText" column="MESSAGE_TEXT" />
+		<result property="userName" column="USER_NAME" />
+		<result property="userMail" column="USER_MAIL" />
+	</resultMap>
+
+
+
+
+	<sql id="MessageList">
+		MESSAGE_ID,
+		MESSAGE_SUBJECT,
+		MESSAGE_TEXT,
+		USER_NAME,
+		USER_MAIL
+	</sql>
+
+	<sql id="MessageFrom">
+		from message
+	</sql>
+
+	<select id="findAll" parameterType="Message" resultMap="MessageResult">
+		select
+		<include refid="MessageList" />
+		<include refid="MessageFrom" />
+	</select>
+
+	<select id="findOne" parameterType="Message" resultMap="MessageResult">
+		select
+		<include refid="MessageList" />
+		<include refid="MessageFrom" />
+		where MESSAGE_ID = #{messageId}
+	</select>
+
+
+	<insert id="create" parameterType="Message">
+		insert into Message(MESSAGE_SUBJECT, MESSAGE_TEXT, USER_NAME, USER_MAIL) values(#{messageSubject}, #{messageText}, #{userName}, #{userMail})
+		
+	    <selectKey keyProperty="messageId" resultType="long" order="AFTER">
+			SELECT LAST_INSERT_ID();
+		</selectKey>
+
+	</insert>
+
+	<update id="update" parameterType="Message">
+		update message set MESSAGE_SUBJECT = #{messageSubject}, MESSAGE_TEXT = #{messageText}, USER_NAME = #{userName}, USER_MAIL = #{userMail}
+		where MESSAGE_ID = #{messageId}
+		
+		<!-- IT return the number of rows afected -->
+		<selectKey resultType="long" order="AFTER">
+			SELECT ROW_COUNT();
+		</selectKey>
+	</update>
+
+
+	<delete id="delete" parameterType="Message">
+		delete from message
+		where MESSAGE_ID = #{messageId}
+	</delete>
+
+
+
+</mapper>

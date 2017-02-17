@@ -1,0 +1,40 @@
+{
+	"HOME": "Casa",
+	"PROJECTS": "Projectos Recientes",
+	"SERVICES": "Servicios",
+	"TEACHING": "Enseñando",
+	"RESOURCES": "Investigaciones",
+	"CONTACT": "Contacto",
+	"TITLE_CARROUSEL_HOME_1": "Baoling Ma",
+	"SUBTITLE_CARROUSEL_HOME_1": "Poblacion y modelos Medio Ambientales, Modelos de Enfermedades, Ecuaciones Diferenciales, Profesor Asistente",
+	"TITLE_CARROUSEL_HOME_2": "Millersville University",
+	"SUBTITLE_CARROUSEL_HOME_2": "Educacion en Matematicas, Profesor Aistente",
+	"TITLE_CARROUSEL_HOME_3": "Research",
+	"SUBTITLE_CARROUSEL_HOME_3": "Aproximaciones de diferencias finitas para un modelo poblacional estructurado por tamaños con estados distribuidos en el reclutamiento",
+	
+	"TITLE_WELCOME": "Bienvenido",
+	"SUBTITLE_WELCOME": "Baoling, sería una buena idea para explicar un poco su sitio web. ¿Qué puede hacer para los usuarios, etc ...",
+
+	
+	"RESOURCE_CAROUSEL_IMAGE_1":"dist/img/blog/blog_1.jpg",
+	"RESOURCE_CAROUSEL_ENTRY_TITLE_1":"Proceso de la Comida en un Laboratorio",
+	"RESOURCE_CAROUSEL_ENTRY_META_1":"John Marshal",
+	"RESOURCE_CAROUSEL_DATE_1":"Julio 10, 2015",
+	"RESOURCE_CAROUSEL_ENTRY_CONTENT_1":"Este Contenido es en Espanol, Este Contenido es en Espanol, Este Contenido es en Espanol, Este Contenido es en Espanol",
+	
+	"RESOURCE_CAROUSEL_IMAGE_2":"dist/img/blog/blog_2.jpg",
+	"RESOURCE_CAROUSEL_ENTRY_TITLE_2":"Increibles Revistas",
+	"RESOURCE_CAROUSEL_ENTRY_META_2":"John Marshal",
+	"RESOURCE_CAROUSEL_DATE_2":"Julio 10, 2015",
+	"RESOURCE_CAROUSEL_ENTRY_CONTENT_2":"Este Contenido es en Espanol, Este Contenido es en Espanol, Este Contenido es en Espanol, Este Contenido es en Espanol",
+	
+	"RESOURCE_CAROUSEL_IMAGE_3":"dist/img/blog/blog_3.jpg",
+	"RESOURCE_CAROUSEL_ENTRY_TITLE_3":"Cientificos Locos",
+	"RESOURCE_CAROUSEL_ENTRY_META_3":"John Marshal",
+	"RESOURCE_CAROUSEL_DATE_3":"Julio 10, 2015",
+	"RESOURCE_CAROUSEL_ENTRY_CONTENT_3":"Este Contenido es en Espanol, Este Contenido es en Espanol, Este Contenido es en Espanol, Este Contenido es en Espanol"
+	
+
+
+
+}

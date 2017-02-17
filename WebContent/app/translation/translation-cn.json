@@ -1,0 +1,39 @@
+{
+	"HOME": "家",
+	"PROJECTS": "最近的項目",
+	"SERVICES": "服務",
+	"TEACHING": "教學",
+	"RESOURCES": "資源",
+	"CONTACT": "聯繫",
+	"TITLE_CARROUSEL_HOME_1": "马保玲",
+	"SUBTITLE_CARROUSEL_HOME_1": "人口和環境模型，疾病模型，部分微分方程，科學計算，助理教授",
+	"TITLE_CARROUSEL_HOME_2": "Millersville University",
+	"SUBTITLE_CARROUSEL_HOME_2": "數學教育，助教",
+	"TITLE_CARROUSEL_HOME_3": "研究",
+	"SUBTITLE_CARROUSEL_HOME_3": "對招聘中分佈狀態的大小結構化人口模型的有限差分近似",
+	
+	"TITLE_WELCOME": "歡迎",
+	"SUBTITLE_WELCOME": "他寶玲是一個好主意，解釋一點點你的網站。 它可以為用戶等做什麼...",
+	
+	
+	
+	"RESOURCE_CAROUSEL_IMAGE_1":"dist/img/blog/blog_1.jpg",
+	"RESOURCE_CAROUSEL_ENTRY_TITLE_1":"Chinese translate",
+	"RESOURCE_CAROUSEL_ENTRY_META_1":"John Marshal",
+	"RESOURCE_CAROUSEL_DATE_1":"Julio 10, 2015",
+	"RESOURCE_CAROUSEL_ENTRY_CONTENT_1":"Este Contenido es en Chinese, Este Contenido es en Chinese",
+	
+	"RESOURCE_CAROUSEL_IMAGE_2":"dist/img/blog/blog_2.jpg",
+	"RESOURCE_CAROUSEL_ENTRY_TITLE_2":"Chinese translate Title",
+	"RESOURCE_CAROUSEL_ENTRY_META_2":"John Marshal",
+	"RESOURCE_CAROUSEL_DATE_2":"Julio 10, 2015",
+	"RESOURCE_CAROUSEL_ENTRY_CONTENT_2":"Este Contenido es en Chinese, Este Contenido es en Chinese",
+	
+	"RESOURCE_CAROUSEL_IMAGE_3":"dist/img/blog/blog_3.jpg",
+	"RESOURCE_CAROUSEL_ENTRY_TITLE_3":"Cientificos Locos Chinos",
+	"RESOURCE_CAROUSEL_ENTRY_META_3":"John Marshal",
+	"RESOURCE_CAROUSEL_DATE_3":"Julio 10, 2015",
+	"RESOURCE_CAROUSEL_ENTRY_CONTENT_3":"Este Contenido es en Chinese, Este Contenido es en Chinese"
+	
+	
+}
